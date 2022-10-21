@@ -12,10 +12,10 @@ function App() {
 
         <div className="row">
             <div className="left-panel box" >
-            <Link to="/user"> 
+            
                <h5>USER</h5> 
                 <p>(submit your waste entry)</p>
-                </Link>
+              
             </div>
             <div className="middle-panel box">
               <h5>MANAGEMENT</h5>
