@@ -1,9 +1,6 @@
 import './user.css';
-import {useState} from "react";
-import {firestore} from "../src/firebase"
-import {addDoc, collection} from "@firebase/firestore"
 const User = () =>{
-  const ref = collection(firestore, "messages");
+  // const ref = collection(firestore, "messages");
   return(
     <body>
     <div className="create">
