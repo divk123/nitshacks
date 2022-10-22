@@ -36,15 +36,9 @@ const User = () =>{
         <option value="SPORTS COMPLEX AREA">SPORTS COMPLEX AREA</option>
         <option value="GUEST HOUSE AREA">GUEST HOUSE AREA</option>
       </select>
-<<<<<<< HEAD
       <div class="inputBox">
                 <button type="submit">Submit</button>
             </div>
-=======
-      <button className='addentry'>
-        ADD ENTRY
-      </button>
->>>>>>> cc596a5896328305c9fd366e2bfc9ba35200a7c2
      </form>
     </div>
     {/* <script src="firebase/firebase.js"></script> */}
