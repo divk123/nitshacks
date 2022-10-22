@@ -35,7 +35,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
-import User from "./User";
+import User from "./user";
 import Management from "./Management";
 import Municipal from "./Municipal";
 

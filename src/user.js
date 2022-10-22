@@ -1,33 +1,30 @@
-import './User.css';
+import './user.css';
 import {useState} from "react";
-
+import {firestore} from "../src/firebase"
+import {addDoc, collection} from "@firebase/firestore"
 const User = () =>{
+  const ref = collection(firestore, "messages");
   return(
+    <body>
     <div className="create">
       <h2>
         SUBMIT A NEW ENTRY:
       </h2>
-    <form>
+    <form action="" id="contactForm">
       <label>
         describe the waste:
       </label>
-      <textarea
-      required
-      ></textarea>
+      <textarea id="waste" cols="30" rows="10" placeholder=""></textarea>
       <label>Date of waste identification</label>
-      <textarea
-      required
-      ></textarea>
+      <textarea id="ident" cols="30" rows="10" placeholder=""></textarea>
       <label>
        Approximate weight of waste:
       </label>
-      <textarea
-      required
-      ></textarea>
+      <textarea id="weight" cols="30" rows="10" placeholder=""></textarea>
       <label>
         Loation inside the campus:
       </label>
-      <select>
+      <select id="location">
         <option value="ADMIN BUILDING">ADMIN BUILDING</option>
         <option value="GYMKHANA PARK AND NEW GALLERY">GYMKHANA PARK AND NEW GALLERY</option>
         <option value="ECE,CSE AND EIE DEPARTMENT AREA">ECE,CSE AND EIE DEPARTMENT AREA</option>
@@ -39,11 +36,15 @@ const User = () =>{
         <option value="SPORTS COMPLEX AREA">SPORTS COMPLEX AREA</option>
         <option value="GUEST HOUSE AREA">GUEST HOUSE AREA</option>
       </select>
-      <button>
-        ADD ENTRY
-      </button>
+      <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
      </form>
     </div>
+    {/* <script src="firebase/firebase.js"></script> */}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    </body>
   )
 }
 export default User;
