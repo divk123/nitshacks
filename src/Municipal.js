@@ -1,9 +1,12 @@
 import profile from "./nits_hacks_image/download1.png";
 import email from "./nits_hacks_image/email.jpg";
 import pass from "./nits_hacks_image/download.png";
+import { useNavigate } from "react-router-dom";
+
 import './Municipal';
 import './Municipal.css';
-function Municipal() {
+function Municipal(props) {
+    const navigate = useNavigate();
   return (
     <div className = "main">
       <div className = "sub-main">
@@ -28,7 +31,7 @@ function Municipal() {
             </div>
             <br></br>
            <div className="login-button">
-           <button>Login</button>
+           <button className="log_mun" onClick={() => navigate("/map")}>Login</button>
            </div>
             
           </div>

@@ -1,0 +1,26 @@
+
+    
+  
+  .cont {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+ .img:hover{
+    opacity:100%;
+ }
+ .img{
+    opacity: 80%;
+    height: 600px;
+    width: 1000px; 
+ }
+ h2{
+    color:darkgreen;
+ }
+ .location{
+    font-size: 25px;
+ }

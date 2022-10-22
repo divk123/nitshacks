@@ -39,7 +39,7 @@ const User = () =>{
         <option value="SPORTS COMPLEX AREA">SPORTS COMPLEX AREA</option>
         <option value="GUEST HOUSE AREA">GUEST HOUSE AREA</option>
       </select>
-      <button>
+      <button className='addentry'>
         ADD ENTRY
       </button>
      </form>

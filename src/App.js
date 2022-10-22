@@ -38,7 +38,7 @@ import Home from "./Home";
 import User from "./User";
 import Management from "./Management";
 import Municipal from "./Municipal";
-
+import Map from "./Map"
 
 const App = () => {
   return (
@@ -49,6 +49,7 @@ const App = () => {
           <Route path="/User" element={<User />} />
           <Route path="/Management" element={<Management/>}/>
           <Route path="/Municipal" element={<Municipal/>}/>
+          <Route path="/Map" element={<Map/>}/>
         </Routes>
       </Router>
     </div>
