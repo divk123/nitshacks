@@ -2,8 +2,12 @@ import profile from "./nits_hacks_image/download1.png";
 import email from "./nits_hacks_image/email.jpg";
 import pass from "./nits_hacks_image/download.png";
 import './Management';
+import { useNavigate } from "react-router-dom";
+
 import './Management.css';
-function Management() {
+function Management(props) {
+    const navigate = useNavigate();
+
   return (
     <div className = "main">
       <div className = "sub-main">
@@ -26,7 +30,7 @@ function Management() {
               <input type= "text" placeholder="password" className="name"/>
             </div>
            <div className="login-button">
-           <button>Login</button>
+           <button className="butt" onClick={() => navigate("/map")}>Login</button>
            </div>
             
           </div>

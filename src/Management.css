@@ -41,6 +41,11 @@
     outline:none;
     background-color: #fff;
   }
+  .butt:hover{
+    cursor: pointer;
+    opacity: 60%;
+
+  }
   .email{
     height:25px;
     width:25px;
