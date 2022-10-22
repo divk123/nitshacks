@@ -13,11 +13,11 @@ const User = () =>{
       </label>
       <textarea id="waste" cols="30" rows="10" placeholder=""></textarea>
       <label>Date of waste identification</label>
-      <textarea id="ident" cols="30" rows="10" placeholder=""></textarea>
+      <textarea id="ident"  placeholder=""></textarea>
       <label>
        Approximate weight of waste:
       </label>
-      <textarea id="weight" cols="30" rows="10" placeholder=""></textarea>
+      <textarea id="weight"  placeholder=""></textarea>
       <label>
         Loation inside the campus:
       </label>
